@@ -3,7 +3,7 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import { Container, Div1, Div2, NavLink, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
@@ -15,13 +15,14 @@ const Header = () =>  (
       </Link>
     </Div1>
     <Div2>
+      
       <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
+        <Link href="#tech">
+          <NavLink>Future Scope</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#Model">
+        <Link href="#model">
           <NavLink>Model</NavLink>
         </Link>
       </li>

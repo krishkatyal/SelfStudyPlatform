@@ -1,5 +1,15 @@
 import styled from "styled-components"
 
+export const Label = styled.label`
+  background-color: #FFF;
+  color: Black;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
+
 export const Boxes = styled.div`
   width: 100%;
   display: grid;
