@@ -6,7 +6,7 @@ import { Box, Boxes, BoxNum, BoxText } from './Modelstyles';
 
 const Model = () => (
   <div>
-    Acomplishments
+    Model Work
   </div>
 );
 
