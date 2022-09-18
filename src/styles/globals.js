@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    font-family: ${props => props.theme.fonts.title};
   }
   li{
     list-style: none;

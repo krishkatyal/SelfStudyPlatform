@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText, Label, Input } from './Modelstyles';
+import { Box, Boxes, BoxNum, BoxText, Label, Input, Hyper } from './Modelstyles';
 import { useState } from "react";
 
 
@@ -68,7 +68,11 @@ const Model = () => {
               <label htmlFor='upload'>Upload</label>
               </Label>
             </form>
-            {prediction && <h1>{prediction.message}</h1> && <h2>{prediction.links}</h2>}
+            {prediction && <h1>{prediction.message}</h1>}
+            <Hyper>
+            
+            {prediction &&  <a href={prediction.links}><font color="white" size='3'>Link </font> </a>}
+            </Hyper>
           </div>
         </section>
     </Section>

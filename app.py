@@ -27,6 +27,7 @@ def upload():
             text_in+=page_text
 
         response=""
+        links="https://github.com"
 
         keywords=Sort_Tuple(rake_object.run(text_in))
         keys = [i[0] for i in keywords]
@@ -73,7 +74,7 @@ def upload():
         Store data in SQL/MongoDB
         Store data from a webapp into AWS S3
         Deploy a model on AWS SageMaker"""
-                links=""
+                links="https://www.tutorialspoint.com/flask/index.htm"
                 break
                 prime = 1
             elif i in fe:
@@ -84,13 +85,14 @@ def upload():
         Store data in SQL/MongoDB
         Store data from a webapp into AWS S3
         Deploy a model on AWS SageMaker"""
-                links=""
+                links="https://www.w3schools.com/react/default.asp"
                 prime = 1
                 break
             else:
                 pass
         if prime == 0:
             response="No pathways available currently."
+            links="https://www.tutorialspoint.com/index.htm"
         
         print(response)
 

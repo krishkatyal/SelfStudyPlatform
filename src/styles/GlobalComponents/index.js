@@ -225,7 +225,7 @@ export const ButtonFront = styled.button`
   &:focus {
     outline: none;
   }
-  &:active {
+  &:active  {
     opacity: 1;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }

@@ -156,3 +156,6 @@ export const IconContainer = styled.div`
     justify-content: space-between;
   }
 `
+export const Hyper = styled.a`
+  color: white;
+`
