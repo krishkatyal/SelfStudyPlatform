@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-cors = "*"
-rake-nltk = "*"
 pypdf2 = "*"
 
 [dev-packages]
