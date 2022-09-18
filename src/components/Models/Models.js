@@ -59,12 +59,13 @@ const Model = () => {
               <br></br>
               <Label>
               <input
+                id="upload"
                 type="submit"
                 value="Upload"
                 className="btn btn-primary btm-block mt-4 bg-teal-200 text-black rounded-lg px-5 py-3"
                 hidden
               />
-              <label>Upload</label>
+              <label htmlFor='upload'>Upload</label>
               </Label>
             </form>
             {prediction && <h1>{prediction.message}</h1>}
