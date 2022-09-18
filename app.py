@@ -43,26 +43,26 @@ def upload():
                 response="""Regression
         SVD
         Text processing using NLTK, spaCy
-        https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a
         Computational linguistics and word vectors
         Project - Sentiment detection model using word embeddings
-        RNNs for text classification 
-        https://dennybritz.com/posts/wildml/understanding-convolutional-neural-networks-for-nlp/
+        RNNs for text classification
         sequential modeling
         Transfer learning 
         ULMFit by FastAi
         Project - Using bert and gpt-2 finetuning
         chatbots and audio processing"""
+                links="https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a"
                 prime = 1
                 break
             elif i in cv:
-                response="""Deep Learning - https://www.coursera.org/learn/neural-networks-deep-learning
+                response="""Deep Learning  
         Handwritten Digits Classifier - 
         Object Localization(Find Waldo using OpenCV) - 
         Recognize digits in a Sudoku picture and solve it - 
         Face Recognition and FaceNet - 
         Deploy a model on AWS Sagemaker/Heroku
         """
+                links="https://www.coursera.org/learn/neural-networks-deep-learning"
                 prime = 1
                 break
             elif i in be:
@@ -73,6 +73,7 @@ def upload():
         Store data in SQL/MongoDB
         Store data from a webapp into AWS S3
         Deploy a model on AWS SageMaker"""
+                links=""
                 break
                 prime = 1
             elif i in fe:
@@ -83,13 +84,14 @@ def upload():
         Store data in SQL/MongoDB
         Store data from a webapp into AWS S3
         Deploy a model on AWS SageMaker"""
+                links=""
                 prime = 1
                 break
             else:
                 pass
         if prime == 0:
-            response="No pathways available."
+            response="No pathways available currently."
         
         print(response)
 
-        return {'message':response}
+        return {'message':response, 'links':links}
