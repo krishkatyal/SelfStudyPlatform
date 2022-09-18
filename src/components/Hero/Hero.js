@@ -12,7 +12,7 @@ const Hero = (props) => (
         Guacamole
       </SectionTitle>
       <SectionText>
-        Kuch bhi likh do abhi kuch dimaag mae nahi aa raha hai. 
+        A single stop to get to know what all you need to study to master that research paper. 
       </SectionText>
     </LeftSection>
   </Section>
