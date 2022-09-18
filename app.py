@@ -12,24 +12,29 @@ def Sort_Tuple(tup):
 app = Flask(__name__)
 CORS(app)
 
-file = open('test.pdf', 'rb')
-reader=PyPDF2.PdfFileReader(file)
-stop_dir = "stop_words.txt"
-rake_object = RAKE.Rake(stop_dir)
+@app.route('/upload', methods=['POST'])
+def upload():
+    file=request.files['file']
+    if(str(file.filename)!="" and str(file.filename[-3:]) == "pdf"):
+        pdf = open(file.filename, 'rb')
+        reader=PyPDF2.PdfFileReader(pdf)
+        stop_dir = "stop_words.txt"
+        rake_object = RAKE.Rake(stop_dir)
+        text_in=""
+        for i in range(reader.numPages):
+            page=reader.getPage(i)
+            page_text=page.extractText()
+            text_in+=page_text
 
-text_in=""
-for i in range(reader.numPages):
-    page=reader.getPage(i)
-    page_text=page.extractText()
-    text_in+=page_text
+        response=""
 
-response=""
+        keywords=Sort_Tuple(rake_object.run(text_in))
+        for i in keywords:
+            print(i)
+            response +=(str(i)+'\n')
 
-keywords=Sort_Tuple(rake_object.run(text_in))
-for i in keywords:
-    print(i)
-    response +=(str(i)+'\n')
+        return response
 
-@app.route('/init')
+'''@app.route('/init')
 def hello():
-    return response
+    return response'''
