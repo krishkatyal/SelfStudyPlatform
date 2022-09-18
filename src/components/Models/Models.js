@@ -59,6 +59,7 @@ const Model = () => {
               <br></br>
               <Label>
               <input
+                id="upload"
                 type="submit"
                 value="Upload"
                 className="btn btn-primary btm-block mt-4 bg-teal-200 text-black rounded-lg px-5 py-3"
