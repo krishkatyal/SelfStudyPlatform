@@ -7,6 +7,9 @@ name = "pypi"
 flask = "*"
 flask-cors = "*"
 pypdf2 = "*"
+nltk = "*"
+rake-nltk = "*"
+python-rake = "==1.4.4"
 
 [dev-packages]
 
