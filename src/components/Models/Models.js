@@ -63,7 +63,6 @@ const Model = () => {
                 type="submit"
                 value="Upload"
                 className="btn btn-primary btm-block mt-4 bg-teal-200 text-black rounded-lg px-5 py-3"
-                id = "upload"
                 hidden
               />
               <label htmlFor='upload'>Upload</label>
