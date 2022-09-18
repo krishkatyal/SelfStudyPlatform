@@ -29,6 +29,7 @@
 
 + Flask  
 
++ NextJS
 
 <img width="1293" alt="Screenshot 2022-09-18 at 8 43 04 PM" src="https://user-images.githubusercontent.com/89596037/190915063-ddb3d4b6-9637-462f-9a76-be5582536d47.png">
 
