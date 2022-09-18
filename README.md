@@ -25,8 +25,6 @@
 
 + NLTK  
 
-+ NextJS  
-
 + Flask  
 
 + NextJS
