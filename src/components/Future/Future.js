@@ -16,27 +16,27 @@ const Future = () =>  (
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
-          <ListTitle>Point 1</ListTitle>
+          <ListTitle>First</ListTitle>
           <ListParagraph>
-            XYZ
+          Creating personalized pathways for people who have an end goal depending on their current skills.
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiFirebase size="3rem" />
         <ListContainer>
-          <ListTitle>Point 2</ListTitle>
+          <ListTitle>Second</ListTitle>
           <ListParagraph>
-            ABC
+          Use latest project done to recommend the next project.
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiZend size="3rem" />
         <ListContainer>
-          <ListTitle>Point 3</ListTitle>
+          <ListTitle>Third</ListTitle>
           <ListParagraph>
-            ABC
+          Integrate with coursera, github to check real time status of pathway of a person.
           </ListParagraph>
         </ListContainer>
       </ListItem>
