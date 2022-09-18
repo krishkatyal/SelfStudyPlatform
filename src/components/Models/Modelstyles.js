@@ -1,13 +1,27 @@
 import styled from "styled-components"
 
 export const Label = styled.label`
-  background-color: #FFF;
-  color: Black;
-  padding: 0.5rem;
-  font-family: sans-serif;
-  border-radius: 0.3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-image: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%),linear-gradient(90deg, #13ADC7 0%, #945DD6 100%);
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  vertical-align: middle;
+  horizontal-align: middle;
+  text-align: center;
+  line-height: 34px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+  }
 `
 
 export const Boxes = styled.div`
