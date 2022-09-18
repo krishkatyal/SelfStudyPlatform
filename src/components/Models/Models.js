@@ -21,7 +21,7 @@ const Model = () => {
         formData.append("file", file);
         console.log(file);
 
-        fetch("http://localhost:8000/upload", {
+        fetch("http://localhost:5000/upload", {
         method: "POST",
         body: formData,
         })
