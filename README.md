@@ -25,7 +25,7 @@
 
 + NLTK  
 
-+ React  
++ NextJS  
 
 + Flask  
 
