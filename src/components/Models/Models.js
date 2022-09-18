@@ -21,7 +21,7 @@ const Model = () => {
         formData.append("file", file);
         console.log(file);
 
-        fetch("http://localhost:3000/upload", {
+        fetch("http://localhost:8000/upload", {
         method: "POST",
         body: formData,
         })
@@ -33,7 +33,7 @@ const Model = () => {
     };
     
     return (
-    <Section nopadding id="Team">
+    <Section nopadding id="Model">
     <SectionDivider />
     <br />
     <SectionTitle main>Get your roadmap</SectionTitle>
